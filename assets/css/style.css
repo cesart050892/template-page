@@ -1,106 +1,108 @@
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif; /* Por defecto utiliza Poppins */
+  margin: 0;
+  font-family: "Poppins", sans-serif; /* Por defecto utiliza Poppins */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    height: 55px;
-    margin-left: 0px;
-    margin-right: 0px;
-    max-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  background-color: #333;
+  color: #fff;
+  height: 55px;
+  margin-left: 0px;
+  margin-right: 0px;
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 #title {
-    text-align: left;
-    margin-left: 5px;
+  text-align: left;
+  margin-left: 5px;
 }
 
 #title h2 {
-    margin: 0;
+  margin: 0;
 }
 
 nav {
-    display: flex;
-    gap: 30px;
-    margin-left: 400px;
+  display: flex;
+  gap: 30px;
+  margin-left: 400px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 37px; /* Espacio entre enlaces */
+  color: #fff;
+  text-decoration: none;
+  margin-right: 37px; /* Espacio entre enlaces */
 }
 
 nav a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: red; /* Color de la línea roja */
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s ease; /* Animación de transición */
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: red; /* Color de la línea roja */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease; /* Animación de transición */
 }
 
 nav a:hover::after {
-    width: 100%; /* Ancho completo al pasar el ratón por encima */
+  width: 100%; /* Ancho completo al pasar el ratón por encima */
 }
 
-nav a.active::after {
-    width: 100%; /* Ancho completo cuando el enlace está activo */
+nav a:not(:hover)::after {
+  width: 0; /* Ancho cero cuando no está en hover */
 }
 
 #date {
-    text-align: right;
+  text-align: right;
 }
 .content {
-    display: flex;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
 }
 
 .content img {
-    max-width: 38%;
-    height: auto;
-    margin-left: 365px;
-    margin-top: 20px;
+  max-width: 38%;
+  height: auto;
+  margin-left: 365px;
+  margin-top: 20px;
 }
 
 .text {
-    margin-left: 27px;
-    margin-top: 0px;
+  margin-left: 27px;
+  margin-top: -40px;
 }
 
 .text p {
-    margin: 0 0 0px; /* Espaciado inferior entre párrafos */
+  margin: 0 0 -30px; /* Espaciado inferior entre párrafos */
 }
 
 .text p:nth-child(1) {
-    font-size: 68px; /* Tamaño del primer párrafo */
-    font-style: bold;
+  font-size: 68px; /* Tamaño del primer párrafo */
+  font-weight: 700;
 }
 
 .text p:nth-child(2) {
-    font-size: 68px; /* Tamaño del segundo párrafo */
+  font-size: 68px;
+  font-weight: 700; /* Tamaño del segundo párrafo */
 }
 
 .text p:nth-child(3) {
-    font-size: 68px; /* Tamaño del tercer párrafo */
-    color: green; /* Color verde para el tercer párrafo */
+  font-weight: 700;
+  font-size: 68px; /* Tamaño del tercer párrafo */
+  color: green; /* Color verde para el tercer párrafo */
 }
 
 .text p:nth-child(4) {
-    margin-top: 10px;
-    font-size: 16px; /* Tamaño del cuarto párrafo */
+  margin-top: 40px;
+  font-size: 16px; /* Tamaño del cuarto párrafo */
 }
 
 .text p:nth-child(5) {
-    font-size: 16px; /* Tamaño del quinto párrafo */
+  font-size: 16px; /* Tamaño del quinto párrafo */
 }
