@@ -111,26 +111,10 @@ nav a:not(:hover)::after {
 }
 
 .text p:nth-child(1) {
-    font-size: 68px; /* Tamaño del primer párrafo */
-    font-weight: 700;
-}
-
-.text p:nth-child(2) {
-    font-size: 68px;
-    font-weight: 700; /* Tamaño del segundo párrafo */
-}
-
-.text p:nth-child(3) {
-    font-weight: 700;
-    font-size: 68px; /* Tamaño del tercer párrafo */
-    color: green; /* Color verde para el tercer párrafo */
-}
-
-.text p:nth-child(4) {
     margin-top: 40px;
     font-size: 16px; /* Tamaño del cuarto párrafo */
 }
 
-.text p:nth-child(5) {
+.text p:nth-child(2) {
     font-size: 16px; /* Tamaño del quinto párrafo */
 }
