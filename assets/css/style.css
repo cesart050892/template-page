@@ -28,7 +28,7 @@
 
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif; /* Por defecto utiliza Poppins */
+    font-family: "Roboto", sans-serif; /* Por defecto utiliza Roboto */
 }
 
 header {
@@ -50,6 +50,7 @@ header {
 }
 
 #title h2 {
+    font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
