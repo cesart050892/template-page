@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Template Page</title>
-    </head>
-    <body>
-        <header>
-            <div id="title">
-                <h2>Heustonn</h2>
-            </div>
-            <nav>
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact us</a>
-                <a href="#">Log In</a>
-            </nav>
-            <div id="date">
-                <p id="currentDate"></p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Template Page</title>
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <h2 class="brand">Heustonn</h2>
+      </div>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact us</a>
+        <a href="#">Log In</a>
+      </nav>
+      <div id="date">
+        <p id="currentDate"></p>
+      </div>
 
-            <script>
-                // JavaScript para obtener la fecha actual
-                //document.getElementById("currentDate").innerHTML =
-                //  new Date().toLocaleDateString();
-            </script>
-        </header>
-        <div class="content">
-            <img src="assets/images/slider-img.jpg" alt="Imagen Descriptiva" />
-            <div class="text">
-                <h1>
-                    Heustonn<br />
-                    Maintenance<br />
-                    <span style="color: green">Service</span>
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed
-                    do eiusmod
-                </p>
-                <p>tempor incididunt ut labore</p>
-            </div>
+      <script>
+        // JavaScript para obtener la fecha actual
+        //document.getElementById("currentDate").innerHTML =
+        //  new Date().toLocaleDateString();
+      </script>
+    </header>
+    <div class="content">
+      <img src="assets/images/slider-img.jpg" alt="Imagen Descriptiva" />
+      <div class="text">
+        <div class="title-container">
+          <h1>
+            Heustonn<br />
+            Maintenance<br />
+            <span style="color: rgba(275, 79, 80, 0.907)">Service</span>
+          </h1>
         </div>
-        <link rel="script" href="assets/js/script.js" />
-    </body>
+        <div class="paragraphs-container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do
+            eiusmod
+          </p>
+          <p>tempor incididunt ut labore</p>
+        </div>
+      </div>
+    </div>
+    <link rel="script" href="assets/js/script.js" />
+  </body>
 </html>

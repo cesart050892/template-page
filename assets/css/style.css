@@ -1,121 +1,134 @@
 :root {
-    /* Tamaños */
-    --font-size-small: 0.875em; /* 14px en em */
-    --font-size-medium: 1em; /* 16px en em */
-    --font-size-large: 1.25em; /* 20px en em */
+  /* Tamaños */
+  --font-size-small: 0.875em; /* 14px en em */
+  --font-size-medium: 1em; /* 16px en em */
+  --font-size-large: 4em; /* 20px en em */
 
-    --spacing-small: 0.5em; /* 8px en em */
-    --spacing-medium: 1em; /* 16px en em */
-    --spacing-large: 2em; /* 32px en em */
+  --spacing-small: 0.5em; /* 8px en em */
+  --spacing-medium: 1em; /* 16px en em */
+  --spacing-large: 2em; /* 32px en em */
 
-    --border-radius-small: 4px;
-    --border-radius-medium: 8px;
-    --border-radius-large: 12px;
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 12px;
 
-    /* Colores */
-    --color-primary: #3498db;
-    --color-secondary: #2ecc71;
-    --color-tertiary: #e74c3c;
-    --color-dark: #333;
-    --color-light: #f5f5f5;
-    --color-accent: #ffcc00;
+  /* Colores */
+  --color-primary: #3498db;
+  --color-secondary: #2ecc71;
+  --color-tertiary: #e74c3c;
+  --color-dark: #333;
+  --color-light: #f5f5f5;
+  --color-accent: #ffcc00;
 
-    /* Sombras */
-    --box-shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
-    --box-shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* Sombras */
+  --box-shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --box-shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 body {
-    margin: 0;
-    font-family: "Roboto", sans-serif; /* Por defecto utiliza Roboto */
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    height: 55px;
-    margin-left: 0px;
-    margin-right: 0px;
-    max-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  background-color: #333;
+  color: #fff;
+  height: 55px;
+  margin-left: 0px;
+  margin-right: 0px;
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.brand {
+  font-family: "Poppins", sans-serif;
 }
 
 #title {
-    text-align: left;
-    margin-left: 5px;
+  text-align: left;
+  margin-left: 5px;
 }
 
 #title h2 {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
+  margin: 0;
 }
 
 nav {
-    display: flex;
-    gap: 30px;
-    margin-left: 400px;
+  display: flex;
+  gap: 30px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 37px; /* Espacio entre enlaces */
+  color: #fff;
+  text-decoration: none;
+  margin-right: 37px; /* Espacio entre enlaces */
 }
 
 nav a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: red; /* Color de la línea roja */
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s ease; /* Animación de transición */
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: red; /* Color de la línea roja */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease; /* Animación de transición */
 }
 
 nav a:hover::after {
-    width: 100%; /* Ancho completo al pasar el ratón por encima */
+  width: 100%; /* Ancho completo al pasar el ratón por encima */
 }
 
 nav a:not(:hover)::after {
-    width: 0; /* Ancho cero cuando no está en hover */
+  width: 0; /* Ancho cero cuando no está en hover */
 }
 
 #date {
-    text-align: right;
+  text-align: right;
 }
 .content {
-    display: flex;
-    align-items: center;
-    margin: 20px;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .content img {
-    max-width: 38%;
-    height: auto;
-    margin-left: 365px;
-    margin-top: 20px;
+  width: 29%;
+  height: auto;
+  margin-top: 24px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .text {
-    margin-left: 27px;
-    margin-top: -40px;
+  margin-right: 0px;
+  margin-top: 60px;
 }
 
-.text p {
-    margin: 0 0 -30px; /* Espaciado inferior entre párrafos */
+.title-container {
+  margin: 0 0 -30px; /* Espaciado inferior entre el título y los párrafos */
 }
 
-.text p:nth-child(1) {
-    margin-top: 40px;
-    font-size: 16px; /* Tamaño del cuarto párrafo */
+.title-container h1 {
+  margin: 0;
+  font-size: 4em;
 }
 
-.text p:nth-child(2) {
-    font-size: 16px; /* Tamaño del quinto párrafo */
+.paragraphs-container p {
+  margin: 0 0 0px; /* Espaciado inferior entre párrafos */
+}
+
+.paragraphs-container p:nth-child(1) {
+  margin-top: 40px;
+  font-size: 1em;
+}
+
+.paragraphs-container p:nth-child(2) {
+  font-size: 1em;
 }
