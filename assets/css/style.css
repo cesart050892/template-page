@@ -40,3 +40,47 @@ nav a {
 #date {
   text-align: right;
 }
+.content {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.content img {
+  max-width: 38%;
+  height: auto;
+  margin-left: 365px;
+  margin-top: 20px;
+}
+
+.text {
+  margin-left: 27px;
+  margin-top: 0px;
+}
+
+.text p {
+  margin: 0 0 0px; /* Espaciado inferior entre párrafos */
+}
+
+.text p:nth-child(1) {
+  font-size: 68px; /* Tamaño del primer párrafo */
+  font-style: bold;
+}
+
+.text p:nth-child(2) {
+  font-size: 68px; /* Tamaño del segundo párrafo */
+}
+
+.text p:nth-child(3) {
+  font-size: 68px; /* Tamaño del tercer párrafo */
+  color: green; /* Color verde para el tercer párrafo */
+}
+
+.text p:nth-child(4) {
+  margin-top: 10px;
+  font-size: 16px; /* Tamaño del cuarto párrafo */
+}
+
+.text p:nth-child(5) {
+  font-size: 16px; /* Tamaño del quinto párrafo */
+}
